@@ -1,5 +1,6 @@
 from django.db import models
 
+
 #Controladores
 
   # CharField  = Caracteres
@@ -24,7 +25,6 @@ class Chela(models.Model):
     nacionalidad = models.CharField(max_length=50, blank=True)
     creado       = models.DateField(auto_now_add=True)
     editado      = models.DateTimeField(auto_now=True)
-
 
     def __str__ (self):
         return self.marca
